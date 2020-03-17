@@ -1,0 +1,22 @@
+using System;
+class Program
+{
+    static void Main()
+    {
+        int Number = 10;
+        int AnotherNumber = 20;
+        int Value = 30;
+        int AnotherValue = 40;
+        if (Number == 10 && AnotherNumber == 20)
+        {
+            Console.WriteLine("Hello Guys");
+        }
+
+        if (Value == 30 || AnotherValue == 50)
+        {
+            Console.WriteLine("hey Guys");
+
+        }
+    }
+}
+
