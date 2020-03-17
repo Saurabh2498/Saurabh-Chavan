@@ -9,6 +9,6 @@ string FirstName = Console.ReadLine();
 Console.WriteLine("please enter Second Name");
 string SecondName = Console.ReadLine();
 
-Console.WriteLine("Hello {0}, {1}"), FirstName, SecondName);
+Console.WriteLine("Hello {0} {1}"), FirstName, SecondName);
 }
 }
