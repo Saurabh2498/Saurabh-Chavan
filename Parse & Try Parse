@@ -1,0 +1,25 @@
+using System;
+class Program
+{
+    static void Main()
+    {   //Parse Conversion
+        string Number = "100";
+        int i = int.Parse(Number); 
+        Console.WriteLine(i);
+        
+
+        //TryParse Conersion
+        string Value = "100tfj";
+        int Result = 0;
+        bool IsConversionSucessful = int.TryParse(Value, out Result);
+        if (IsConversionSucessful)
+        {
+            Console.WriteLine(Result);
+        }
+        else
+        {
+            Console.WriteLine("Enter Valid Number");
+        }
+ 
+    }
+}
