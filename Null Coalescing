@@ -1,0 +1,15 @@
+using System;
+class Program
+{
+    static void Main()
+    {
+        int? TicketsOnSale = 100;
+        int AvailableTickets = TicketsOnSale ?? 0;
+
+        
+        Console.WriteLine("Number of Availble tickets is {0}", AvailableTickets);
+
+ 
+    }
+}
+
