@@ -1,0 +1,16 @@
+using System;
+class Program
+{
+    static void Main()
+    { // implicit conversion
+        int i = 100;
+        float j = i; 
+        Console.WriteLine(j);
+
+        //Explicit Conversion 
+        float k = 123.45F;
+        int l = (int)k;
+        Console.WriteLine(l);
+ 
+    }
+}
