@@ -1,0 +1,21 @@
+using System;
+class Program
+{
+    static void Main()
+    {
+        int? TicketsOnSale = null;
+        int AvailableTickets;
+        if (TicketsOnSale == null)
+        {
+            AvailableTickets = 0;
+        }
+        else
+        {
+            AvailableTickets = TicketsOnSale.Value;
+        }
+        Console.WriteLine("Number of Availble tickets is {0}", AvailableTickets);
+
+ 
+    }
+}
+
