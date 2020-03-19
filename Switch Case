@@ -1,0 +1,27 @@
+using System;
+class Program
+{
+    static void Main()
+    {
+      Console.WriteLine("Enter a number");
+          int Number = int.Parse(Console.ReadLine());
+          switch (Number)
+          {
+              case 10:
+                  Console.WriteLine("The entered number is 10");
+                  break;
+              case 20:
+                  Console.WriteLine("The entered number is 20");
+                  break;
+              case 30:
+                  Console.WriteLine("The entered number is 30");
+                  break;
+              case 40:
+                  Console.WriteLine("The entered number is 40");
+                  break;
+              default:
+                  Console.WriteLine("The entered number is not 10 20 30 40");
+                  break;
+          }
+    }
+}
