@@ -1,0 +1,44 @@
+using System;
+class Program
+{
+    static void Main()
+    {
+        int CostOfCoffee = 0;
+    Start:
+      Console.WriteLine("Enter the coffe size you want ");
+          int NumberOfCoffee = int.Parse(Console.ReadLine());
+      
+        switch (NumberOfCoffee)
+        {
+            case 1 :
+                CostOfCoffee += 1;
+                break;
+            case 2 :
+                CostOfCoffee += 2;
+                break;
+            case 3 :
+                CostOfCoffee += 3;
+                break;
+            default :
+                Console.WriteLine("Entered number of size {0} is Invalid", NumberOfCoffee);
+                goto Start;
+        }
+
+    Decide:
+        Console.WriteLine("Do you  want to buy another coffee - YES or NO");
+    string UserDecision = Console.ReadLine();
+    switch (UserDecision.ToUpper())
+    {
+        case "YES":
+            goto Start;
+        case "NO":
+            break;
+        default:
+            Console.WriteLine("Your choice {0} is Invalid ", UserDecision);
+            goto Decide;
+    }
+    Console.WriteLine("Thanks for Shopping with Us");
+    Console.WriteLine("Your Bill Is {0}", CostOfCoffee );
+          
+          }
+    }
