@@ -1,0 +1,22 @@
+using System;
+class Program
+{
+    public static void Main()
+    {
+        Program.evenNumbers(); 
+    }
+      public static void evenNumbers()
+        {
+            int Start = 0;
+            while (Start <= 20)
+            {
+                Console.WriteLine(Start);
+                Start = Start + 2;
+            }
+        }
+
+    }  
+
+       
+
+          
