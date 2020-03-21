@@ -1,0 +1,43 @@
+using System;
+public class Employee
+{
+    public string FirstName;
+    public string LastName;
+    public string Email;
+
+    public void PrintFullName()
+    {
+        Console.WriteLine(FirstName + " " + LastName);    
+    }
+}
+
+public class FullTimeEmployee : Employee
+{
+    public float Yearlysalary;
+
+}
+public class PartTimeEmployee : Employee
+{
+    public  float HourlyRate;
+}
+public class program
+{
+
+    public static void Main()
+    {
+        FullTimeEmployee FTE = new FullTimeEmployee();
+        FTE.FirstName = "Saurabh";
+        FTE.LastName = "Chavan";
+        FTE.Yearlysalary = 50000;
+        FTE.Email = "chavan.saurabh02@gmail.com";
+        FTE.PrintFullName();
+
+        PartTimeEmployee PTE = new PartTimeEmployee();
+        PTE.FirstName = "Rohan";
+        PTE.LastName = "Arora";
+        PTE.HourlyRate = 5000;
+        PTE.Email = "RohanArora@gmail.com";
+        PTE.PrintFullName();
+    }
+}
+
